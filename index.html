@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            Python 3.11.0a4 documentation
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#What's_New_In_Python_3.11?">What's new in Python 3.11?</a></li>
+            <li><a class="nav-link" href="#Functions_Definitions">Functions Definitions</a></li>
+            <li><a class="nav-link" href="#Library_Reference">Library Reference</a></li>
+            <li><a class="nav-link" href="#Language_Reference">Language Reference</a></li>
+            <li><a class="nav-link" href="#Python_Setup_and_Usage">Python Setup and Usage</a></li>
+            <li><a class="nav-link" href="#Python_HOWTOs">Python HOWTOs</a></li>
+            <li><a class="nav-link" href="#Installing_Python_Modules">Installing Python Modules</a></li>
+            <li><a class="nav-link" href="#Distributing_Python_Modules">Distributing Python Modules</a></li>
+            <li><a class="nav-link" href="#Extending_and_Embedding">Extending and Embedding</a></li>
+            <li><a class="nav-link" href="#Python/C_API">Python/C API</a></li>
+            <li><a class="nav-link" href="#FAQs">FAQs</a></li>
+            <li><a class="nav-link" href="#Example_Codes">Example Codes</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="What's_New_In_Python_3.11?">
+            <header>What's New In Python 3.11?</header>
+            <article>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae ducimus consectetur, maxime quidem aliquid aperiam veniam nihil impedit officia commodi earum, veritatis deleniti quae vero, autem quas architecto alias provident esse soluta. In molestias corrupti deserunt cum earum recusandae nihil veritatis error blanditiis. 
+                 </p>   
+                <p> porro ratione dolore facilis nobis ab quibusdam autem velit neque expedita praesentium esse. Adipisci omnis autem porro, velit eius officia molestiae ad totam, at quis harum non quisquam? Asperiores vero enim iste laborum. Aliquam, nobis! Architecto minus sint laboriosam inventore asperiores magni, non sunt nemo? Veniam optio laudantium quae iste corporis?
+                </p>
+                
+            </article>
+        </section>
+        <section class="main-section" id="Functions_Definitions">
+            <header>Functions Definitions</header>
+            <article>
+                <p>A function definition is an executable statement. Its execution binds the function name in the current local namespace to a function object (a wrapper around the executable code for the function). This function object contains a reference to the current global namespace as the global namespace to be used when the function is called.</p>
+
+                <p>The function definition does not execute the function body; this gets executed only when the function is called.</p>
+                    
+                <p>A function definition may be wrapped by one or more decorator expressions. Decorator expressions are evaluated when the function is defined, in the scope that contains the function definition. The result must be a callable, which is invoked with the function object as the only argument. The returned value is bound to the function name instead of the function object. Multiple decorators are applied in nested fashion. For example, the following code:</p>
+                    <code>
+                        @f1(arg)<br>
+                        @f2<br>
+                        def func(): pass
+                    </code>
+                
+                <p>is roughly equivalent to:</p>
+                <code>
+                    def func(): pass<br>
+                    func = f1(arg)(f2(func))
+                </code>    
+                </article>
+        </section>
+
+        <section class="main-section" id="Library_Reference">
+            <header>Library Reference</header>
+            <article>
+                <p>While The Python Language Reference describes the exact syntax and semantics of the Python language, this library reference manual describes the standard library that is distributed with Python. It also describes some of the optional components that are commonly included in Python distributions.</p>
+
+                <p>Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.</p>
+                    
+                <p> Python installers for the Windows platform usually include the entire standard library and often also include many additional components. For Unix-like operating systems Python is normally provided as a collection of packages, so it may be necessary to use the packaging tools provided with the operating system to obtain some or all of the optional components. </p>
+            </article>
+        </section>
+        <section class="main-section" id="Language_Reference">
+            <header>Language Reference</header>
+            <article>
+                <p>This reference manual describes the syntax and “core semantics” of the language. It is terse, but attempts to be exact and complete. The semantics of non-essential built-in object types and of the built-in functions and modules are described in The Python Standard Library. For an informal introduction to the language, see The Python Tutorial. For C or C++ programmers, two additional manuals exist: Extending and Embedding the Python Interpreter describes the high-level picture of how to write a Python extension module, and the Python/C API Reference Manual describes the interfaces available to C/C++ programmers in detail.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Python_Setup_and_Usage">
+            <header>Python Setup and Usage</header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta ducimus dolorum aliquid totam aut numquam architecto provident minima suscipit accusamus ut optio quia quisquam laborum amet reiciendis dolor porro sed non ullam adipisci, dolore debitis? Fugit illum illo sed rerum, voluptate porro? Eius aliquid fuga nemo accusamus veritatis nisi nobis impedit assumenda at. Nostrum possimus architecto in provident omnis soluta reiciendis ad at praesentium minus sequi ex inventore dicta, non adipisci?</p>
+            </article>
+        </section>
+        <section class="main-section" id="Python_HOWTOs">
+            <header>Python HOWTOs</header>
+            <article>
+                <p>Python HOWTOs are documents that cover a single, specific topic, and attempt to cover it fairly completely. Modelled on the Linux Documentation Project's HOWTO collection, this collection is an effort to foster documentation that's more detailed than the Python Library Reference.</p>
+                Currently, the HOWTOs are:
+                <ul>
+                    <li>Porting Python 2 Code to Python 3</li>
+                    <li>Porting Extension Modules to Python 3</li>
+                    <li>Curses Programming with Python</li>
+                    <li>Descriptor HowTo Guide</li>
+                    <li>Enum HOWTO</li>
+                    <li>Functional Programming HOWTO</li>
+                    <li>Logging HOWTO</li>
+                    <li>Logging Cookbook</li>
+                    <li>Regular Expression HOWTO</li>
+                    <li>Socket Programming HOWTO</li>
+                    <li>Sorting HOW TO</li>
+                    <li>Unicode HOWTO</li>
+                    <li>HOWTO Fetch Internet Resources Using The urllib Package</li>
+                    <li>Argparse Tutorial</li>
+                    <li>An introduction to the ipaddress module</li>
+                    <li>Argument Clinic How-To</li>
+                    <li>Instrumenting CPython with DTrace and SystemTap</li>
+                    <li>Annotations Best Practices</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Installing_Python_Modules">
+            <header>Installing Python Modules</header>
+            <article>
+                <p>As a popular open source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open source license terms.</p>
+
+                <p>This allows Python users to share and collaborate effectively, benefiting from the solutions others have already created to common (and sometimes even rare!) problems, as well as potentially contributing their own solutions to the common pool.</p>
+
+                <p>This guide covers the installation part of the process. For a guide to creating and sharing your own Python projects, refer to the distribution guide.</p>
+                
+            </article>
+        </section>
+        <section class="main-section" id="Distributing_Python_Modules">
+            <header>Distributing Python Modules</header>
+            <article>
+                <p>As a popular open source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open source license terms.</p>
+
+                <p>This allows Python users to share and collaborate effectively, benefiting from the solutions others have already created to common (and sometimes even rare!) problems, as well as potentially contributing their own solutions to the common pool.</p>
+                    
+                <p>This guide covers the distribution part of the process. For a guide to installing other Python projects, refer to the installation guide.</p>
+                <span class="note">
+                    Note For corporate and other institutional users, be aware that many organisations have their own policies around using and contributing to open source software. Please take such policies into account when making use of the distribution and installation tools provided with Python.
+                </span>
+            </article>
+        </section>
+        <section class="main-section" id="Extending_and_Embedding">
+            <header>Extending and Embedding</header>
+            <article>
+                <p>This document describes how to write modules in C or C++ to extend the Python interpreter with new modules. Those modules can not only define new functions but also new object types and their methods. The document also describes how to embed the Python interpreter in another application, for use as an extension language. Finally, it shows how to compile and link extension modules so that they can be loaded dynamically (at run time) into the interpreter, if the underlying operating system supports this feature.</p>
+
+                <p>This document assumes basic knowledge about Python. For an informal introduction to the language, see The Python Tutorial. The Python Language Reference gives a more formal definition of the language. The Python Standard Library documents the existing object types, functions and modules (both built-in and written in Python) that give the language its wide application range.</p>
+                    
+                <p>For a detailed description of the whole Python/C API, see the separate Python/C API Reference Manual.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Python/C_API">
+            <header>Python/C API</header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto obcaecati blanditiis aliquam necessitatibus assumenda quae suscipit. Delectus perspiciatis natus voluptates iste ipsum accusamus aut facilis.</p>
+            </article>
+        </section>
+        <section class="main-section" id="FAQs">
+            <header>FAQs</header>
+            <article>
+                <h3>Python Frequently Asked Questions</h3>
+                <ul>
+                    <li><a href="https://docs.python.org/3.11/faq/general.html">General Python FAQ</a></li>
+                    <li><a href="https://docs.python.org/3.11/faq/programming.html">Programming FAQ</a></li>
+                    <li><a href="https://docs.python.org/3.11/faq/design.html">Design and History FAQ</a></li>
+                    <li><a href="https://docs.python.org/3.11/faq/library.html">Library and Extension FAQ</a></li>
+                    <li><a href="https://docs.python.org/3.11/faq/extending.html">Extending/Embedding FAQ</a></li>
+                    <li><a href="https://docs.python.org/3.11/faq/windows.html">Python on Windows FAQ</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Example_Codes">
+            <header>Example Codes</header>
+            <article>
+                <h3>Phyton For Loops</h3>
+                <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+                This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                    
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                      print(x) 
+                </code>
+            
+                <h3>Looping Through a String</h3>
+                <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+                <code>
+                    for x in "banana":
+                    print(x)
+                </code>
+
+                <h3>The break Statement</h3>   
+                <p>Exit the loop when x is "banana":</p>
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                      print(x)
+                      if x == "banana":
+                        break
+                </code>
+
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
